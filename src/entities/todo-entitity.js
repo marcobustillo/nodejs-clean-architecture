@@ -5,7 +5,7 @@ const buildTodo = ({ Id }) => {
     }
 
     return Object.freeze({
-      getId: () => Id,
+      getId: () => Id.makeId(),
       getTodoName: () => todoName,
       getTodoDescription: () => todoDescription,
     });
